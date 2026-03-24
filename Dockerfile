@@ -1,8 +1,10 @@
 FROM node:20-alpine
 
+EXPOSE 8080
+
 WORKDIR /app
 
-COPY server.js .
+COPY server.js /app
 
 RUN npm install ws
 
