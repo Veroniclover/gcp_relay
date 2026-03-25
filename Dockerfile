@@ -6,8 +6,6 @@ WORKDIR /app
 
 COPY server.py /app
 
-RUN npm install ws
-
 ENV PORT=8080
 
 CMD ["python", "server.py"]
